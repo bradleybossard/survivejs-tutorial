@@ -8,6 +8,10 @@ const PATHS = {
 module.exports = {
   // Entry accepts a path or an object of entries. We'll be using the
   // latter form given it's convenient with more complex configurations.
+  devServer: {
+    host: '0.0.0.0',
+    port: 8080
+  },
   entry: {
     app: PATHS.app
   },

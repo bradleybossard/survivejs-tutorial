@@ -4,7 +4,10 @@
   "description": "## Links [SurviveJS - Webpack and React](http://survivejs.com/webpack_react/webpack_and_react/)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --content-base build"
+
   },
   "keywords": [],
   "author": "Bradley Bossard <bradleybossard@gmail.com> (http://bradleybossard.com/)",
