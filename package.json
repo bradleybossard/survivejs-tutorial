@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack-dev-server --content-base build"
-
   },
   "keywords": [],
   "author": "Bradley Bossard <bradleybossard@gmail.com> (http://bradleybossard.com/)",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.7.7",
-    "babel-loader": "^6.2.4"
+    "babel-loader": "^6.2.4",
+    "webpack-merge": "^0.12.0"
   }
 }
