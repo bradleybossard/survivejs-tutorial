@@ -48,10 +48,8 @@ if(TARGET === 'start' || !TARGET) {
       //
       // 0.0.0.0 is available to all network devices unlike default
       // localhost
-      //host: process.env.HOST,
-      //port: process.env.PORT
-      host: '0.0.0.0',
-      port: 8080
+      host: process.env.HOST || '0.0.0.0',
+      port: process.env.PORT || 8080
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin()
