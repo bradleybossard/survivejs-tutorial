@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack')
 const merge = require('webpack-merge');
 
 const TARGET = process.env.npm_lifecycle_event;
@@ -12,12 +13,6 @@ const common = {
 
   // Entry accepts a path or an object of entries. We'll be using the
   // latter form given it's convenient with more complex configurations.
-/*
-  devServer: {
-    host: '0.0.0.0',
-    port: 8080
-  },
-*/
   entry: {
     app: PATHS.app
   },
@@ -53,8 +48,10 @@ if(TARGET === 'start' || !TARGET) {
       //
       // 0.0.0.0 is available to all network devices unlike default
       // localhost
-      host: process.env.HOST,
-      port: process.env.PORT
+      //host: process.env.HOST,
+      //port: process.env.PORT
+      host: '0.0.0.0',
+      port: 8080
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin()
